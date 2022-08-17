@@ -27,7 +27,7 @@ public class Pedido {
         sb.append("        Dentro da Caixa:\n");
 
         for (ItemPedido item : this.itensDentroCaixa) {
-            sb.append("                - ").append(item.getTipo()).append(" ").append(item.getNome()).append("\n  ");
+            sb.append("                - ").append(item.getTipo()).append(" ").append(item.getNome()).append("\n");
         }
 
         return sb.toString();
