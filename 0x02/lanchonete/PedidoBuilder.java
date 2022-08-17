@@ -13,7 +13,7 @@ public class PedidoBuilder extends PedidoAbstractBuilder {
         lanche.setTipo(TipoItemPedido.LANCHE);
         lanche.setNome(tipo.name());
 
-        pedido.adicionaItemDentroCaixa(lanche);
+        pedido.adicionarItemDentroCaixa(lanche);
     }
 
     @Override
@@ -23,7 +23,7 @@ public class PedidoBuilder extends PedidoAbstractBuilder {
         batata.setTipo(TipoItemPedido.BATATA);
         batata.setNome(tamanho.name());
 
-        pedido.adicionaItemDentroCaixa(batata);
+        pedido.adicionarItemDentroCaixa(batata);
     }
 
     @Override
@@ -33,7 +33,7 @@ public class PedidoBuilder extends PedidoAbstractBuilder {
         brinde.setTipo(TipoItemPedido.BRINDE);
         brinde.setNome(tipo.name());
 
-        pedido.adicionaItemDentroCaixa(brinde);
+        pedido.adicionarItemDentroCaixa(brinde);
     }
 
     @Override
@@ -43,7 +43,7 @@ public class PedidoBuilder extends PedidoAbstractBuilder {
         bebida.setTipo(TipoItemPedido.BEBIDA);
         bebida.setNome(tipo.name());
 
-        pedido.adicionaItemForaCaixa(bebida);
+        pedido.adicionarItemForaCaixa(bebida);
     }
 
     public Pedido build() {
