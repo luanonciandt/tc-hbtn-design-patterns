@@ -19,15 +19,15 @@ public class Pedido {
     public String toString() {
 
         StringBuilder sb = new StringBuilder();
-        sb.append("        Fora da Caixa:\n");
+        sb.append("\tFora da Caixa:\n");
 
         for (ItemPedido item : this.itensForaCaixa) {
-            sb.append("                - ").append(item.getTipo()).append(" ").append(item.getNome()).append("\n");
+            sb.append("\t\t- ").append(item.getTipo()).append(" ").append(item.getNome()).append("\n");
         }
-        sb.append("        Dentro da Caixa:\n");
+        sb.append("\tDentro da Caixa:\n");
 
         for (ItemPedido item : this.itensDentroCaixa) {
-            sb.append("                - ").append(item.getTipo()).append(" ").append(item.getNome()).append("\n");
+            sb.append("\t\t- ").append(item.getTipo()).append(" ").append(item.getNome()).append("\n");
         }
 
         return sb.toString();
